@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>ExecutionResult</td>
+                          <td>1</td>
+                        <td>25 Eki 2021, 00:57</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">steps.Common_Steps.setUp()</td>
+                <td>1</td>
+                <td class="duration" data-value="3973879800">3s 973ms</td>
+                <td class="duration" data-value="3973879800">3s 973ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.Common_Steps.tearDown(io.cucumber.java.Scenario)</td>
+                <td>1</td>
+                <td class="duration" data-value="3326102900">3s 326ms</td>
+                <td class="duration" data-value="3326102900">3s 326ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_chooses_the_first_order_listed_on_sipariş_seçin_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="3387938000">3s 387ms</td>
+                <td class="duration" data-value="3387938000">3s 387ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_click_Beni_arayın_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="3119655300">3s 119ms</td>
+                <td class="duration" data-value="3119655300">3s 119ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_click_Farklı_bir_konuda_sorum_var_buton_on_chat_box_screen()</td>
+                <td>1</td>
+                <td class="duration" data-value="5096368100">5s 096ms</td>
+                <td class="duration" data-value="5096368100">5s 096ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_click_Gönder_button_on_Arama_talebi_oluştur_screen()</td>
+                <td>1</td>
+                <td class="duration" data-value="3134616100">3s 134ms</td>
+                <td class="duration" data-value="3134616100">3s 134ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_click_Sipariş_ile_ilgili_sorum_var_buton()</td>
+                <td>1</td>
+                <td class="duration" data-value="5709726900">5s 709ms</td>
+                <td class="duration" data-value="5709726900">5s 709ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_click_giriş_yap_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="3111682900">3s 111ms</td>
+                <td class="duration" data-value="3111682900">3s 111ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_click_the_first_product()</td>
+                <td>1</td>
+                <td class="duration" data-value="3103698100">3s 103ms</td>
+                <td class="duration" data-value="3103698100">3s 103ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_click_Ürün_bilgisi_button_on_the_chat_box_screen()</td>
+                <td>1</td>
+                <td class="duration" data-value="5077418100">5s 077ms</td>
+                <td class="duration" data-value="5077418100">5s 077ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_click_Ürünler_orijinal_midir_on_Ürün_bilgisi_tab()</td>
+                <td>1</td>
+                <td class="duration" data-value="3166530200">3s 166ms</td>
+                <td class="duration" data-value="3166530200">3s 166ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_is_on_the_Cozum_Merkezi_page_without_opening_his_account_with_the_browser()</td>
+                <td>1</td>
+                <td class="duration" data-value="10557758400">10s 557ms</td>
+                <td class="duration" data-value="10557758400">10s 557ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_set_his_email_address_and_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="2799509900">2s 799ms</td>
+                <td class="duration" data-value="2799509900">2s 799ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_should_see_Arama_talebi_oluştur_screen()</td>
+                <td>1</td>
+                <td class="duration" data-value="3046850200">3s 046ms</td>
+                <td class="duration" data-value="3046850200">3s 046ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_should_see_Sipariş_Secin_screen()</td>
+                <td>1</td>
+                <td class="duration" data-value="5208063400">5s 208ms</td>
+                <td class="duration" data-value="5208063400">5s 208ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_should_see_chat_box_screen()</td>
+                <td>1</td>
+                <td class="duration" data-value="3037873400">3s 037ms</td>
+                <td class="duration" data-value="3037873400">3s 037ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_should_see_the_answer_screen_for_the_question_user_clicked_on_tab()</td>
+                <td>1</td>
+                <td class="duration" data-value="3037873500">3s 037ms</td>
+                <td class="duration" data-value="3037873500">3s 037ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_should_see_the_request_created_information_on_the_screen()</td>
+                <td>1</td>
+                <td class="duration" data-value="3029894700">3s 029ms</td>
+                <td class="duration" data-value="3029894700">3s 029ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_should_see_Ürün_Seçin_screen()</td>
+                <td>1</td>
+                <td class="duration" data-value="3067793600">3s 067ms</td>
+                <td class="duration" data-value="3067793600">3s 067ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_should_see_Ürün_bilgisi_tab()</td>
+                <td>1</td>
+                <td class="duration" data-value="3030893000">3s 030ms</td>
+                <td class="duration" data-value="3030893000">3s 030ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">steps.HepsiburadaCozumMerkeziSteps.user_should_see_Üye_Giriş_sayfası_Üye_ol_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="2022611300">2s 022ms</td>
+                <td class="duration" data-value="2022611300">2s 022ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>21</td>
+              <td>21</td>
+              <td class="duration">1m 21s 046ms</td>
+              <td class="duration">3s 859ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
