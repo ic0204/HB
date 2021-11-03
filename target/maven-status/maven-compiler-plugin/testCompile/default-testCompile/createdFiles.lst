@@ -1,9 +1,0 @@
-steps\HepsiburadaLoginPage_Steps.class
-steps\HepsiburadaCozumMerkeziSteps.class
-actions\HepsiburadaCozumMerkeziPage_Actions.class
-steps\BrowserType.class
-testRunner\TestRunner.class
-actions\Common_Actions.class
-steps\Common_Steps.class
-steps\HepsiburadaHome_Steps.class
-elements\HepsiburadaCozumMerkezi_Elements.class
